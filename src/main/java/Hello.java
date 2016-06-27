@@ -13,11 +13,25 @@ public class Hello {
 
 	public static String greetingMessage(){
 		// TODO Return "Hello GitHub" string.
-		return "";
+		return "Hello GitHub";
 	}
 
 	public static int[] bubbleSort(int[] array){
 		// TODO Sort the given array in an ascending order and return the sorted array.
+		boolean isSwapped = true;
+		while(isSwapped){
+			isSwapped = false;
+			for (int i = 0;i < array.length - 1;i++)
+			{
+				if (array[i] > array[i + 1])
+				{
+					int temp = array[i];
+					array[i] = array[i+1];
+					array[i+1] = temp;
+					isSwapped = true;
+				}
+			}
+		}
 		return array;
 	}
 	
